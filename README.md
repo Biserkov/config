@@ -15,3 +15,12 @@ scalling-legacy-apps.reg + Notepad2.exe.manifest
 ## IntelliJ IDEA
 
 Change font size with Ctrl+Mouse wheel (found in Settings|Preferences > Editor > General)
+
+## Windows 10 Enable good old sound mixer
+
+```
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\MTCUVC]
+"EnableMtcUvc"=dword:00000000
+```
