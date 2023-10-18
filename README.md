@@ -16,6 +16,8 @@ scalling-legacy-apps.reg + Notepad2.exe.manifest
 
 Change font size with Ctrl+Mouse wheel (found in Settings|Preferences > Editor > General)
 
+Use contrast scrollbars (found in Settings > Appearance & Behavior > Appearance)
+
 ## Windows 10 Enable good old sound mixer
 
 ```
