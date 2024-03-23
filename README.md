@@ -21,8 +21,5 @@ Use contrast scrollbars (found in Settings > Appearance & Behavior > Appearance)
 ## Windows 10 Enable good old sound mixer
 
 ```
-Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\MTCUVC]
-"EnableMtcUvc"=dword:00000000
+winget install PopeenCom.ClassicVolumeMixer
 ```
