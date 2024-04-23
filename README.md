@@ -23,3 +23,25 @@ Use contrast scrollbars (found in Settings > Appearance & Behavior > Appearance)
 ```
 winget install PopeenCom.ClassicVolumeMixer
 ```
+
+## WSL Network config
+
+sudo apt install net-tools
+
+Start PowerShell ISE AS ADMINISTRATOR
+
+Open C:\Users\jbise\OneDrive\Scripts\wsl-network.ps1
+
+Because the script tries to recreate (Delete + Create) some firewall rules, there will be errors the first time.
+
+Run it again (script is idempotent) and it should complete without any errors.
+
+sudo sysctl -w net.ipv4.conf.all.route_localnet=1
+sudo iptables -t nat -I PREROUTING -p tcp -j DNAT --to-destination 127.0.0.1 
+
+Open https://dashboard.ngrok.com/ in Chrome (work browser) and login with Google (work credentials)
+
+Download ngrok and run 
+./ngrok.exe config add-authtoken <token>
+./ngrok.exe http --domain=<domain> <port>
+
