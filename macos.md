@@ -18,6 +18,7 @@
 * drag icons on desktop to remove them
 
 ## Dock 
+* Change App icons by dropping image over the logo in the top of the "Get Info" window in Applications
 * Add small spacer: `defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-spacer-tile";}'; killall Dock`
 * Add large spacer: `defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'; killall Dock`
 
