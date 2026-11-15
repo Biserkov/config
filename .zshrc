@@ -15,3 +15,6 @@ export PATH="$HOME/.npm-global/bin:$PATH"
 export PATH=/opt/homebrew/opt/curl/bin:$PATH
 
 alias brewlist="{ brew leaves; brew list --casks; } | sort"
+brewdump() {
+  brew bundle dump --force --file=- | awk 'NR > 1 && (/^#/ || prev !~ /^#/) { print "" } { prev = $0; print }' > Brewfile
+}

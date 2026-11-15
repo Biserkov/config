@@ -33,6 +33,9 @@ brew "borkdude/brew/babashka"
 # A minimal and opinionated linter for Clojure code that sparks joy.
 brew "borkdude/brew/clj-kondo"
 
+# Transform JSON into EDN into Transit.
+brew "borkdude/brew/jet", trusted: true
+
 # The Clojure Programming Language
 brew "clojure/tools/clojure", trusted: true
 
@@ -60,7 +63,15 @@ cask "temurin"
 # Unicode keyboard layout editor
 cask "ukelele"
 
-# Photo viewer, image manager, image resiser and more
+# Open-source code editor
+cask "visual-studio-code"
+
+# Multimedia player
+cask "vlc"
+
+# Photo viewer and image manager
 cask "xnviewmp"
+
+npm "@stripe/cli"
 
 npm "source-map-cli"
