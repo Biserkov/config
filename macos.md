@@ -1,16 +1,21 @@
-# Mac Mini m4 MacOS Sequoia 15.2
+# Mac Mini m4 MacOS Sequoia 27
+
+Clone this repo in ~
+
+`mv ~/.zshrc ~/config/.zshrc`
+`ln -s ~/config/.zshrc ~/.zshrc`
+`ls -l ~/.zshrc`
+
 
 ## [Velja] as default browser
 
 * rules for opening Firefox and Chrome based on source app (personal vs work)
 
-
-## [RedQuits] - close app when red X is clicked
-
-
 ## Finder
 
 * as Gallery, View -> Show View Options -> Show file name
+
+`defaults write com.apple.finder QuitMenuItem -bool true; killall Finder`
 
 ## Menu bar (a.k.a. system tray)
 
@@ -28,8 +33,5 @@
 * [Grand Perspective]
 
 
-
-
 [Velja]: https://sindresorhus.com/velja
-[RedQuits]: http://www.carsten-mielke.com/redquits.html
 [Grand Perspective]: https://grandperspectiv.sourceforge.net/
