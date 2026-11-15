@@ -34,10 +34,10 @@ brew "borkdude/brew/babashka"
 brew "borkdude/brew/clj-kondo"
 
 # Transform JSON into EDN into Transit.
-brew "borkdude/brew/jet", trusted: true
+brew "borkdude/brew/jet"
 
 # The Clojure Programming Language
-brew "clojure/tools/clojure", trusted: true
+brew "clojure/tools/clojure"
 
 # CLI for opening tabs/windows in Terminal, iTerm2, or Gnome Terminal
 brew "mklement0/ttab/ttab"
