@@ -13,3 +13,5 @@ PROMPT='%~ %(!.#.$) '
 #eval "$(direnv hook zsh)"
 export PATH="$HOME/.npm-global/bin:$PATH"
 export PATH=/opt/homebrew/opt/curl/bin:$PATH
+
+alias brewlist="{ brew leaves; brew list --casks; } | sort"
