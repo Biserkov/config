@@ -37,7 +37,7 @@ brew "borkdude/brew/clj-kondo"
 brew "clojure/tools/clojure", trusted: true
 
 # CLI for opening tabs/windows in Terminal, iTerm2, or Gnome Terminal
-brew "mklement0/ttab/ttab"
+brew "mklement0/ttab/ttab", trusted: true
 
 # Debloat macOS: turn off Apple Intelligence, analytics, ads and pop-ups
 brew "omlahore/tap/removemacai", trusted: true
