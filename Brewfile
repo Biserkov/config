@@ -1,8 +1,8 @@
 tap "borkdude/brew", trusted: true
 
-tap "clojure/tools"
+tap "clojure/tools", trusted: true
 
-tap "mklement0/ttab", "https://github.com/mklement0/ttab.git"
+tap "mklement0/ttab", "https://github.com/mklement0/ttab.git", trusted: true
 
 tap "omlahore/tap"
 
@@ -40,7 +40,7 @@ brew "borkdude/brew/jet", trusted: true
 brew "clojure/tools/clojure", trusted: true
 
 # CLI for opening tabs/windows in Terminal, iTerm2, or Gnome Terminal
-brew "mklement0/ttab/ttab", trusted: true
+brew "mklement0/ttab/ttab"
 
 # Debloat macOS: turn off Apple Intelligence, analytics, ads and pop-ups
 brew "omlahore/tap/removemacai", trusted: true
